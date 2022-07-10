@@ -6,3 +6,66 @@
 html{
     font-family: 'Edu SA Beginner', cursive;
 }
+:root{
+    --white: #fff;
+    --green-light: #90C8AC;
+    --green-medium: #C4DFAA;
+    --yellow-light: #F5F0BB;
+    --purple-hard: #937DC2;
+    --brow-light: #DCD7C9;
+    --black-light:  #1B2430;
+    --blue-hard: #243A73;
+    --blue-light: #4D4C7D;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--blue-hard), var(--blue-light));
+    height: 100vh;
+
+}
+.calculadora{
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(to bottom, var(--green-light), var(--green-medium));
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows:130px repeat(6,80px);
+    justify-content: center;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+.calculadora button{
+    font-size: 30px;
+    background-color: var(--purple-hard);
+    border-radius: 50%;
+    border: 2px #333333 solid;
+    margin: 2px;
+}
+.calculadora button:hover{
+    cursor: pointer;
+    background-color: var(--yellow-light);
+}
+.display{
+    height: 120px;
+    background-color: var(--brow-light);
+    opacity: .7;
+    grid-column: 1/-1;
+    border: 2px #333333 solid;
+    text-align: right;
+    padding: 5px 20px;
+}
+.span2{
+    grid-column: span 2;
+}
+.valorSuperior{
+    color: var(--black-light);
+    font-size: 30px;
+    font-weight: 500;
+}
+.valorInferior{
+    color: var(--black-light);
+    font-size: 45px;
+}
