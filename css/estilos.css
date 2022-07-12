@@ -55,7 +55,8 @@ html{
     grid-column: 1/-1;
     border: 2px #333333 solid;
     text-align: right;
-    padding: 5px 20px;
+    padding: 5px 10px;
+
 }
 .span2{
     grid-column: span 2;
@@ -64,8 +65,18 @@ html{
     color: var(--black-light);
     font-size: 30px;
     font-weight: 500;
+    height: 30px;
+    margin: 5px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 .valorInferior{
     color: var(--black-light);
     font-size: 45px;
+    height: 40px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
